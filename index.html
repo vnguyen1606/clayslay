@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClaySlay - Shape Your Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">ClaySlay</a>
+    <ul class="nav-links">
+      <li><a href="#story">Story</a></li>
+      <li><a href="#feel">The Feel</a></li>
+      <li><a href="#characters">Characters</a></li>
+      <li><a href="#contact">Connect</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">handcrafted with intention</p>
+      <h1 class="hero-title">
+        <span class="line reveal">Clay is not</span>
+        <span class="line reveal delay-1">just material.</span>
+        <span class="line reveal delay-2 italic">It is a feeling.</span>
+      </h1>
+      <p class="hero-sub reveal delay-3">Each piece holds the weight of a quiet afternoon, the exhale of a long week, and the joy of making something wholly your own.</p>
+      <a href="#story" class="hero-cta reveal delay-4">Feel the story <span class="arrow">&#8595;</span></a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="story" id="story">
+    <div class="story-inner">
+      <div class="story-text">
+        <span class="section-tag reveal">the beginning</span>
+        <h2 class="reveal">It started with<br /><em>a lump of clay.</em></h2>
+        <p class="reveal delay-1">Not a plan. Not a blueprint. Just hands, clay, and a moment of stillness in the middle of chaos.</p>
+        <p class="reveal delay-2">ClaySlay was born from the need to slow down, to press your thumbs into something soft and watch it become alive. Every character you see here was shaped by that same quiet urgency, that pull toward something tactile in a world that has gone entirely digital.</p>
+        <p class="reveal delay-3">This is a space for feeling, not scrolling.</p>
+      </div>
+      <div class="story-visual reveal delay-1">
+        <div class="clay-orb">
+          <div class="orb-inner">
+            <div class="orb-text">press<br />and<br />feel</div>
+          </div>
+          <div class="orb-ring ring-1"></div>
+          <div class="orb-ring ring-2"></div>
+          <div class="orb-ring ring-3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Feel Section -->
+  <section class="feel" id="feel">
+    <div class="feel-header">
+      <span class="section-tag reveal">what clay does</span>
+      <h2 class="reveal">The Science of<br /><em>Soft Things</em></h2>
+    </div>
+    <div class="feel-grid">
+      <div class="feel-card reveal" data-index="0">
+        <div class="feel-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="30" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M40 20 Q55 30 55 40 Q55 55 40 60 Q25 55 25 40 Q25 30 40 20Z" fill="currentColor" opacity="0.15"/>
+            <path d="M30 38 Q40 32 50 38 Q40 50 30 38Z" fill="currentColor" opacity="0.4"/>
+          </svg>
+        </div>
+        <h3>Melts Stress</h3>
+        <p>The rhythmic pressing and shaping activates your parasympathetic nervous system. Your cortisol drops. Your breath slows. You arrive.</p>
+      </div>
+      <div class="feel-card reveal delay-1" data-index="1">
+        <div class="feel-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40 15 L45 30 L60 30 L48 40 L52 55 L40 46 L28 55 L32 40 L20 30 L35 30 Z" stroke="currentColor" stroke-width="1.5" fill="currentColor" opacity="0.15"/>
+            <circle cx="40" cy="40" r="8" fill="currentColor" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3>Restores Focus</h3>
+        <p>Working with your hands silences the noise. There is no inbox. No notification. Only the shape forming beneath your fingers.</p>
+      </div>
+      <div class="feel-card reveal delay-2" data-index="2">
+        <div class="feel-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 50 Q30 20 40 25 Q50 20 60 50 Q50 65 40 63 Q30 65 20 50Z" stroke="currentColor" stroke-width="1.5" fill="currentColor" opacity="0.15"/>
+            <path d="M40 30 Q46 40 40 48 Q34 40 40 30Z" fill="currentColor" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3>Unlocks Creativity</h3>
+        <p>Clay does not judge. It yields. It forgives every mistake and transforms every experiment into discovery. Nothing is wrong in clay.</p>
+      </div>
+      <div class="feel-card reveal delay-3" data-index="3">
+        <div class="feel-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="25" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4"/>
+            <circle cx="40" cy="40" r="15" fill="currentColor" opacity="0.2"/>
+            <circle cx="40" cy="40" r="6" fill="currentColor" opacity="0.6"/>
+          </svg>
+        </div>
+        <h3>Grounds You</h3>
+        <p>Earth. Water. Hands. This is the oldest material therapy known to humanity. You are not just making art. You are remembering yourself.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-wrap">
+    <div class="marquee">
+      <span>press &nbsp;&bull;&nbsp; shape &nbsp;&bull;&nbsp; breathe &nbsp;&bull;&nbsp; create &nbsp;&bull;&nbsp; feel &nbsp;&bull;&nbsp; slow down &nbsp;&bull;&nbsp; press &nbsp;&bull;&nbsp; shape &nbsp;&bull;&nbsp; breathe &nbsp;&bull;&nbsp; create &nbsp;&bull;&nbsp; feel &nbsp;&bull;&nbsp; slow down &nbsp;&bull;&nbsp; press &nbsp;&bull;&nbsp; shape &nbsp;&bull;&nbsp; breathe &nbsp;&bull;&nbsp; create &nbsp;&bull;&nbsp; feel &nbsp;&bull;&nbsp; slow down &nbsp;&bull;&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- Characters Section -->
+  <section class="characters" id="characters">
+    <div class="characters-header">
+      <span class="section-tag reveal">the collection</span>
+      <h2 class="reveal">Every character<br /><em>has a story.</em></h2>
+      <p class="reveal delay-1">Each one was born from a mood, a memory, or a daydream. Hover to meet them.</p>
+    </div>
+
+    <div class="characters-grid">
+
+      <div class="char-card reveal" data-color="#C4713B">
+        <div class="char-blob"></div>
+        <div class="char-face">
+          <div class="char-eyes">
+            <div class="eye"><div class="pupil"></div></div>
+            <div class="eye"><div class="pupil"></div></div>
+          </div>
+          <div class="char-mouth"></div>
+          <div class="char-blush left"></div>
+          <div class="char-blush right"></div>
+        </div>
+        <div class="char-info">
+          <h3>Terra</h3>
+          <p class="char-mood">warm &bull; grounded &bull; steady</p>
+          <p class="char-story">Terra was shaped on a slow Sunday. She carries the warmth of terracotta sunsets and reminds you that being rooted is not being stuck.</p>
+        </div>
+        <div class="char-number">01</div>
+      </div>
+
+      <div class="char-card reveal delay-1" data-color="#8B9D77">
+        <div class="char-blob"></div>
+        <div class="char-face">
+          <div class="char-eyes">
+            <div class="eye sleepy"><div class="pupil"></div></div>
+            <div class="eye sleepy"><div class="pupil"></div></div>
+          </div>
+          <div class="char-mouth small"></div>
+          <div class="char-blush left"></div>
+          <div class="char-blush right"></div>
+        </div>
+        <div class="char-info">
+          <h3>Moss</h3>
+          <p class="char-mood">calm &bull; quiet &bull; wise</p>
+          <p class="char-story">Moss speaks slowly. He was born during a thunderstorm when the rain made the world go still, and suddenly there was nothing to rush toward.</p>
+        </div>
+        <div class="char-number">02</div>
+      </div>
+
+      <div class="char-card reveal delay-2" data-color="#D4956A">
+        <div class="char-blob"></div>
+        <div class="char-face">
+          <div class="char-eyes">
+            <div class="eye wide"><div class="pupil"></div></div>
+            <div class="eye wide"><div class="pupil"></div></div>
+          </div>
+          <div class="char-mouth big"></div>
+          <div class="char-blush left"></div>
+          <div class="char-blush right"></div>
+        </div>
+        <div class="char-info">
+          <h3>Pip</h3>
+          <p class="char-mood">curious &bull; playful &bull; bold</p>
+          <p class="char-story">Pip arrived with a squish and a giggle. She was unplanned, a little lopsided, and immediately perfect. The best things usually are.</p>
+        </div>
+        <div class="char-number">03</div>
+      </div>
+
+      <div class="char-card reveal delay-1" data-color="#A0887A">
+        <div class="char-blob"></div>
+        <div class="char-face">
+          <div class="char-eyes">
+            <div class="eye half"><div class="pupil"></div></div>
+            <div class="eye half"><div class="pupil"></div></div>
+          </div>
+          <div class="char-mouth wavy"></div>
+          <div class="char-blush left"></div>
+          <div class="char-blush right"></div>
+        </div>
+        <div class="char-info">
+          <h3>Dusk</h3>
+          <p class="char-mood">dreamy &bull; tender &bull; soft</p>
+          <p class="char-story">Dusk lives between asleep and awake. She understands the in-between, and she holds space for everything you have not yet put into words.</p>
+        </div>
+        <div class="char-number">04</div>
+      </div>
+
+      <div class="char-card reveal delay-2" data-color="#5C7A6E">
+        <div class="char-blob"></div>
+        <div class="char-face">
+          <div class="char-eyes">
+            <div class="eye"><div class="pupil"></div></div>
+            <div class="eye"><div class="pupil"></div></div>
+          </div>
+          <div class="char-mouth line"></div>
+          <div class="char-blush left"></div>
+          <div class="char-blush right"></div>
+        </div>
+        <div class="char-info">
+          <h3>Sage</h3>
+          <p class="char-mood">still &bull; focused &bull; ancient</p>
+          <p class="char-story">Sage does not hurry. He was shaped in silence, over two hours of forgetting the world exists. Some characters take the longest because they need the most care.</p>
+        </div>
+        <div class="char-number">05</div>
+      </div>
+
+      <div class="char-card reveal delay-3" data-color="#E8B89A">
+        <div class="char-blob"></div>
+        <div class="char-face">
+          <div class="char-eyes">
+            <div class="eye star"><div class="pupil"></div></div>
+            <div class="eye star"><div class="pupil"></div></div>
+          </div>
+          <div class="char-mouth curve"></div>
+          <div class="char-blush left"></div>
+          <div class="char-blush right"></div>
+        </div>
+        <div class="char-info">
+          <h3>Lumi</h3>
+          <p class="char-mood">joyful &bull; bright &bull; free</p>
+          <p class="char-story">Lumi was shaped on the best day. She carries that energy. When you look at her, something loosens. Something remembers what it felt like to be light.</p>
+        </div>
+        <div class="char-number">06</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process">
+    <div class="process-inner">
+      <div class="process-text">
+        <span class="section-tag reveal">the making</span>
+        <h2 class="reveal">From raw earth<br /><em>to something alive.</em></h2>
+        <div class="process-steps">
+          <div class="process-step reveal">
+            <div class="step-num">01</div>
+            <div class="step-content">
+              <h4>The clay is warmed</h4>
+              <p>Every session starts with hands. Kneading, pressing, feeling the material wake up under warmth.</p>
+            </div>
+          </div>
+          <div class="process-step reveal delay-1">
+            <div class="step-num">02</div>
+            <div class="step-content">
+              <h4>The character arrives</h4>
+              <p>Never forced. A pinch here, a roll there. The face appears on its own terms, when it is ready.</p>
+            </div>
+          </div>
+          <div class="process-step reveal delay-2">
+            <div class="step-num">03</div>
+            <div class="step-content">
+              <h4>The story is told</h4>
+              <p>Each character gets a name, a feeling, a reason for existing. Because nothing made with intention is anonymous.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="process-visual reveal delay-2">
+        <div class="hands-wrap">
+          <div class="hand-left"></div>
+          <div class="clay-center">
+            <div class="clay-piece"></div>
+          </div>
+          <div class="hand-right"></div>
+        </div>
+        <p class="hands-caption">every press is intentional</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Section -->
+  <section class="quote-section">
+    <div class="quote-inner reveal">
+      <blockquote>
+        "In the middle of making,<br />you forget everything<br /><em>that was hurting you."</em>
+      </blockquote>
+      <cite>A ClaySlay maker</cite>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <span class="section-tag reveal">let's connect</span>
+      <h2 class="reveal">Want a piece<br /><em>of your own?</em></h2>
+      <p class="reveal delay-1">Each character is one of a kind. Follow along on Instagram for new drops, process videos, and moments from the studio.</p>
+      <div class="contact-links reveal delay-2">
+        <a href="https://www.instagram.com/clayslay._/" target="_blank" rel="noopener" class="contact-btn primary">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          @clayslay._
+        </a>
+      </div>
+    </div>
+    <div class="contact-deco">
+      <div class="deco-blob db1"></div>
+      <div class="deco-blob db2"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>ClaySlay &nbsp;&bull;&nbsp; Handmade with feeling &nbsp;&bull;&nbsp; <span id="year"></span></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
